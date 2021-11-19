@@ -71,7 +71,7 @@ def model_predict(img_path, model):
         print("No data present")
     else:
         print("image is of :   ", classes[np.where(value==1)[0][0]])
-        string = "image is of :   ", classes[np.where(value==1)[0][0]]
+        string = "image is of :  " + str(classes[np.where(value==1)[0][0]])
     
     return string
 
