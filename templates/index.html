@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block content %}
+
+<h2 style="margin-left: 35%;">Traffic Sign Detector</h2>
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data" style="margin-left: 40%;">
+        <label for="imageUpload" class="upload-label">
+            Upload image
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".jpg, .jpeg, .png">
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " style ="margin-top: 30%; margin-left: 1%;" id="btn-predict">Predict!</button>
+        </div>
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+    <h2 style="font-size: 25px;"id="result">
+        <span> </span>
+    </h3>
+
+    <h1 style="font-size: 15px;">Project by:<br>1911083- Ishita Rai<br>1911084- Aparna Jadhav<br>1911087- Isha Kaskhedikar</h1>
+</div>
+
+{% endblock %}
